@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.InfoAboutTheMarkerOnTheMap"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_tv_coordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_ll_imageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+        </LinearLayout>
+        </HorizontalScrollView>
+        <ImageView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_iv_show_images"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_map_24"/>
+        <TextView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+        <TextView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_tv_place_type_of_parking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Type: For all the people" />
+        <TextView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_tv_number_of_parking_spots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number: 15" />
+        <TextView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_tv_number_of_parking_spots_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number: 4" />
+        <TextView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_tv_number_of_parking_spots_reserved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number: 1" />
+
+        <TextView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_tv_zone_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ZONE 1" />
+
+        <TextView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: 1€/h" />
+
+        <TextView
+            android:id="@+id/fragment_info_about_the_marker_on_the_map_tv_working_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Working Hours: Every day, 08:00 - 18:00" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fragment_info_about_the_marker_on_the_map_btn_delete_marker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:background="@null"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:visibility="visible"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/fragment_info_about_the_marker_on_the_map_btn_add_favorite"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                android:background="@null"
+                android:layout_gravity="right"
+                android:scaleType="centerCrop"
+                android:clickable="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

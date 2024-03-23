@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Map"
+        android:id="@+id/bottom_navigation_bar_option_map"
+        android:icon="@drawable/ic_baseline_map_24"/>
+    <item
+        android:title="Profile"
+        android:id="@+id/bottom_navigation_bar_option_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        />
+    <item
+        android:title="Favorite"
+        android:id="@+id/bottom_navigation_bar_option_favorite"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        />
+    <item
+        android:title="Novosti"
+        android:id="@+id/bottom_navigation_bar_option_novosti"
+        android:icon="@drawable/baseline_notifications_24"/>
+</menu>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    app:cardBackgroundColor="@color/color_disabled"
+    app:cardCornerRadius="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_favorite_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_favorite_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_background"/>
+
+        <TextView
+            android:id="@+id/tv_favorite_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/color_background"/>
+
+        <!-- Working Hours -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_label_working_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Working Hours:"
+                android:textColor="@color/color_background"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_favorite_working_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/color_background"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <!-- Zone -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_label_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zone:"
+                android:textColor="@color/color_background"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_favorite_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/color_background"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <!-- Parking Spots -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_label_parking_spots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parking spots:"
+                android:textColor="@color/color_background"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_favorite_parking_spots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/color_background"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <!-- Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:id="@+id/tv_label_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price (€/h):"
+                android:textColor="@color/color_background"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_favorite_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/color_background"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

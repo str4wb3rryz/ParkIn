@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#00FF00</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color_background">#323836</color>
+    <color name="color_lavender">#BB86FC</color>
+    <color name="color_input">#F2E7FE</color>
+    <color name="color_disabled">#B7AEC0</color>
+    <color name="activeFilterButtonColor">#FF4081</color>
+    <color name="inactiveFilterButtonColor">#FF000000</color>
+</resources>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_map_filter_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:visibility="invisible"> <!--
+    android:visibility="invisible" -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/filter_marker_menu_ib_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="10px"
+        android:src="@drawable/ic_baseline_close_24"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/filter_marker_menu_btn_ClearFilters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                app:icon="@drawable/ic_baseline_filter_alt_off_24"
+                android:text="Clear All"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of parking:"
+                android:textSize="60px"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_marker_menu_btn_Filter_OnStreet"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/on_street"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/inactiveFilterButtonColor"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_marker_menu_btn_Filter_Parking_lot"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/parking_lot"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/inactiveFilterButtonColor"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/filter_marker_menu_btn_Filter_Parking_garage"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parking_garage"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/inactiveFilterButtonColor"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/filter_marker_menu_btn_Filter_Fringe_parking"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/fringe_parking"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/inactiveFilterButtonColor"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_marker_menu_btn_Filter_Carport"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/carport"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/inactiveFilterButtonColor"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zones:"
+                android:textSize="60px"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/filter_marker_menu_btn_FilterZone0"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zone 0"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/inactiveFilterButtonColor"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/filter_marker_menu_btn_FilterZone1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zone 1"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/inactiveFilterButtonColor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/filter_marker_menu_btn_FilterZone2"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zone 2"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/inactiveFilterButtonColor"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/filter_marker_menu_btn_FilterZone3"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zone 3"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/inactiveFilterButtonColor"/>
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price (in €/h):"
+                android:textSize="60px"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_marker_menu_btn_Price2OrLower"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2€/h or lower"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/inactiveFilterButtonColor"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_marker_menu_btn_Price4OrLower"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4€/h or lower"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/inactiveFilterButtonColor"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_marker_menu_btn_Price6OrLower"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6€/h or lower"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/inactiveFilterButtonColor"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/filter_marker_menu_btn_Price8OrLower"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8€/h or lower"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/inactiveFilterButtonColor"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/filter_marker_menu_btn_PriceFree"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0€/h"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/inactiveFilterButtonColor"/>
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Works until"
+                android:textSize="60px"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_marker_menu_btn_Time12"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12h"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/inactiveFilterButtonColor"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_marker_menu_btn_Time16"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16h"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/inactiveFilterButtonColor"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_marker_menu_btn_Time19"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19h"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/inactiveFilterButtonColor"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.google.android.material.card.MaterialCardView>

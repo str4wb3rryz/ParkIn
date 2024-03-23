@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "791891687150",
+    "firebase_url": "https://rampu23-blueberry-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "rampu23-blueberry",
+    "storage_bucket": "rampu23-blueberry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791891687150:android:6afbd24ffaa275db6a65ff",
+        "android_client_info": {
+          "package_name": "hr.foi.rampu.parkin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIPOanbISat9taqDle9mdKFWNiEpc7OLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

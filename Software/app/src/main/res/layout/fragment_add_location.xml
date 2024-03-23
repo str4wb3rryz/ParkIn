@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddLocationFragment">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/fragment_add_location_et_coordinates"
+            android:text="Coordinates" />
+        <EditText
+            android:id="@+id/fragment_add_location_et_coordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/fragment_add_location_et_name"
+            android:text="Name" />
+        <EditText
+            android:id="@+id/fragment_add_location_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/fragment_add_location_et_numberOfParkingSpots"
+            android:text="Number_of_parking_spots" />
+        <EditText
+            android:id="@+id/fragment_add_location_et_numberOfParkingSpots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/fragment_add_location_et_zone"
+            android:text="Zone" />
+        <EditText
+            android:id="@+id/fragment_add_location_et_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/fragment_add_location_et_description"
+            android:text="Description" />
+        <EditText
+            android:id="@+id/fragment_add_location_et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/fragment_add_location_et_price"
+            android:text="Price" />
+        <EditText
+            android:id="@+id/fragment_add_location_et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text"/>
+
+        <ImageView
+            android:id="@+id/fragment_add_location_iv_show_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:layout_margin="16dp"/>
+        <Button
+            android:id="@+id/fragment_add_location_btn_selectImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_add_location_iv_show_images"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Select Images"/>
+    </LinearLayout>
+</FrameLayout>

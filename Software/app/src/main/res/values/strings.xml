@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ParkIn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="map">Map</string>
+    <string name="favorite">Favorite</string>
+    <string name="add_location">Add location</string>
+    <string name="profile">Profile</string>
+    <string name="login">Login</string>
+    <string name="signin">Already have an account? Log in</string>
+    <string name="register">Not registered yet? Sign up</string>
+    <string name="signup">Sign up</string>
+    <string name="sign_out">Sign out</string>
+    <string name="namesurname">Full name</string>
+    <string name="dob">Date of birth</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="on_street">On-street</string>
+    <string name="parking_lot">Parking lot</string>
+    <string name="parking_garage">Parking garage</string>
+    <string name="fringe_parking">Fringe parking</string>
+    <string name="carport">Carport</string>
+    <string name="novosti">Novosti</string>
+</resources>
